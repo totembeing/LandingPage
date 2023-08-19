@@ -13,14 +13,22 @@ body, html{
     background-color: #1f2937;
     align-items: center;
     justify-content: center;
+    color: white;
 }
 
 .second{
     background-color: none;
+    flex-direction: column;
 }
 
 .third{
     background-color: #e5e7eb;
+    flex-direction: column;
+}
+
+.fourth{
+    display: flex;
+    flex-direction: column;
 }
 
 .main{
@@ -35,4 +43,112 @@ body, html{
     border: 3px solid white;
     flex: 1;
     display: flex;
+    flex-direction: column;
+}
+
+.upper{
+    border: 2px solid white;
+    flex: 1;    
+}
+
+.lower{
+    flex: 4;
+    display: flex;
+}
+
+
+
+.right .upper{
+    display: flex;
+
+}
+
+.link{
+    flex: 1;
+    border: 2px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 11px;
+}
+
+*{
+    font-family: 'Courier New', Courier, monospace;
+    
+    
+}
+
+.left .lower{
+    
+    flex-direction: column;
+}
+
+.lowerComponent{
+    flex: 1;
+    border: 2px solid white;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.right .lower{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+button{
+    background-color: aquamarine;
+    border-color: transparent;
+    border-radius: 5px;
+}
+
+.submit:hover{
+    background-color: aqua;
+}
+
+.text, .images{
+    border: 2px solid #1f2937;
+}
+
+.text{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.images{
+    flex: 3;
+    display: flex;
+}
+
+.imagesComp{
+    flex: 1;
+    border: 2px solid #1f2937;
+}
+
+.thirdComp{
+    border: 2px solid #1f2937;
+}
+
+.quote{
+    flex: 4;
+}
+
+.name{
+    flex: 1;
+}
+
+.fourthComp{
+    border: 2px solid #1f2937;
+}
+
+.footer{
+    flex: 3;
+}
+
+.copyright{
+    background-color: #1f2937;
+    flex: 1;
 }
