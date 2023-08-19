@@ -89,22 +89,20 @@ body, html{
     justify-content: center;
     align-items: center;
     text-align: center;
+    display: flex;
 }
 
 .right .lower{
     justify-content: center;
     align-items: center;
     text-align: center;
+    
 }
 
 button{
-    background-color: aquamarine;
-    border-color: transparent;
+    background-color: lightskyblue;
+    border: 2px solid white;
     border-radius: 5px;
-}
-
-.submit:hover{
-    background-color: aqua;
 }
 
 .text, .images{
@@ -140,15 +138,30 @@ button{
     flex: 1;
 }
 
-.fourthComp{
-    border: 2px solid #1f2937;
-}
-
 .footer{
     flex: 3;
+    border: 2px solid #1f2937;
+    display: flex;
 }
 
-.copyright{
-    background-color: #1f2937;
+.footerComp{
+    height: 50%;
+    border-radius: 10px;
+    display: flex;
     flex: 1;
+    margin: 45px;
+    background-color: lightskyblue;
 }
+
+.footerCompLeft{
+    flex: 4;
+    
+}
+
+.footerCompRight{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
