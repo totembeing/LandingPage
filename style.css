@@ -1,167 +1,43 @@
-body, html{
-    height: 100%;
+*{
     padding: 0%;
     margin: 0%;
-}
-
-.container{
-    height: 100%;
-    display: flex;
-}
-
-.first{
-    background-color: #1f2937;
-    align-items: center;
-    justify-content: center;
-    color: white;
-}
-
-.second{
-    background-color: none;
-    flex-direction: column;
-}
-
-.third{
-    background-color: #e5e7eb;
-    flex-direction: column;
-}
-
-.fourth{
-    display: flex;
-    flex-direction: column;
-}
-
-.main{
-    /*border: 3px solid white;*/
-    height: 260px;
-    width: 500px;
-    display: flex;
-    gap: 5px;
-}
-
-.left, .right{
-    border: 3px solid white;
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-}
-
-.upper{
-    border: 2px solid white;
-    flex: 1;    
-}
-
-.lower{
-    flex: 4;
-    display: flex;
-}
-
-
-
-.right .upper{
-    display: flex;
-
-}
-
-.link{
-    flex: 1;
-    border: 2px solid white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 11px;
-}
-
-*{
+    box-sizing: border-box;
     font-family: 'Courier New', Courier, monospace;
-    
-    
 }
 
-.left .lower{
-    
-    flex-direction: column;
+header{
+width: 100%;
+height: 100vh;
+background: url('images/2.jpg');
+background-size: cover;
 }
 
-.lowerComponent{
-    flex: 1;
-    border: 2px solid white;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
+nav{
+    background-color: aliceblue;
+    width: 100%;
     display: flex;
-}
-
-.right .lower{
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    
-}
-
-button{
-    background-color: lightskyblue;
-    border: 2px solid white;
-    border-radius: 5px;
-}
-
-.text, .images{
-    border: 2px solid #1f2937;
-}
-
-.text{
-    flex: 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.images{
-    flex: 3;
-    display: flex;
-}
-
-.imagesComp{
-    flex: 1;
-    border: 2px solid #1f2937;
-}
-
-.thirdComp{
-    border: 2px solid #1f2937;
-}
-
-.quote{
-    flex: 4;
 }
 
 .name{
     flex: 1;
-}
-
-.footer{
-    flex: 3;
-    border: 2px solid #1f2937;
-    display: flex;
-}
-
-.footerComp{
-    height: 50%;
-    border-radius: 10px;
-    display: flex;
-    flex: 1;
-    margin: 45px;
-    background-color: lightskyblue;
-}
-
-.footerCompLeft{
-    flex: 4;
-    
-}
-
-.footerCompRight{
-    flex: 1;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
+.links{
+    flex: 3;
+    display: flex;
+    border: 2px solid black;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    font-size: 12px;
+}
+
+.Register{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
