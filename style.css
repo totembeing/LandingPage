@@ -105,7 +105,6 @@ nav{
 }
 
 .secondComp{
-    border: 2px solid white;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -165,3 +164,4 @@ nav{
     align-items: center;
     font-size: 15px;
 }
+
