@@ -11,6 +11,12 @@ a{
     text-decoration: none;
 }
 
+a:hover{
+    background-color: silver;
+    color: black;
+    border-radius: 5px;
+}
+
 .container{
     width: 100%;
     height: 100%;
@@ -50,14 +56,14 @@ nav{
     border: transparent;
 }
 
-.Register{
+.email{
     flex: 1;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.registerButton{
+.emailButton{
     border-radius: 5px;
     background-color: transparent;
     border: transparent;
@@ -65,7 +71,7 @@ nav{
     font-size: 20px;
 }
 
-.registerButton:hover{
+.emailButton:hover{
     background-color: transparent;
 }
 
@@ -172,3 +178,4 @@ nav{
     text-align: center;
     flex-direction: column;
 }
+

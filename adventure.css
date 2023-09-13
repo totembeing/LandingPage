@@ -1,0 +1,41 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+
+body,html{
+    height: 100%;
+    width: 100%;
+}
+
+.parent{
+    height: 100%;
+    width: 100%;
+    background: url('images/10.jpg');
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.children{
+    height: 70%;
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 30px;
+    flex-direction: column;
+}
+
+.startLink{
+    text-decoration: none;
+    border-radius: 8px;
+}
+
+.startLink:hover {
+    background-color: gray;
+    color: black;
+}
