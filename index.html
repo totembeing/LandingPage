@@ -5,19 +5,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </head>
 <body>
     <div class="container">
         <header>
             <nav>
-                <div class="name" style="color: white; font-weight: bold;">
+                <div class="name" style="color: white; font-weight: 500;">
                     Pixel World
                 </div>
                 <div class="links">
+                    <div class="linksDiv">
                     <a href="#">Home</a>
                     <a href="adventure.html" target="_blank">Adventure</a>
                     <a href="https://github.com/totembeing/LandingPage" target="_blank">Source</a>
                     <a href="#">Help</a>
+                    </div>
+                </div>
+                <div class="iconDiv">
+                    <div class="subiconDiv">
+                        <ion-icon class="mailIcon" name="mail-outline"></ion-icon>
+                        <ion-icon class="menuIcon" name="menu-outline"></ion-icon>
+                    </div>
                 </div>
                 <div class="email">
                     <button class="emailButton">Register</button>
@@ -25,10 +35,10 @@
             </nav>
             <div class="welcome"> <!--welcomeComp are the flex-items under flexbox welcome-->
                 <div class="welcomeComp welcomeText">
-                    <p style="font-size: 60px;">Welcome</p> <br> <p style="font-size: 40px;">To</p> <br> <p style="font-size: 70px;">The Pixel World</p>
+                    <p class="welcomeText1">Welcome</p> <br> <p class="welcomeText2">To</p> <br> <p class="welcomeText3">The Pixel World</p>
                 </div> 
                 <div class="welcomeComp intro">
-                    <p style="font-size: 20px; font-weight: 700;">A mysterious land hidden in the mountains, where every <br> aspect of the human world in pixelated.</p>
+                    <p style="font-weight: 400;">A mysterious land hidden in the mountains, where every <br> aspect of the human world in pixelated.</p>
                 </div> 
             </div>
         </header>
@@ -39,7 +49,7 @@
             <div class="pictures secondComp">
                 <div class="picturesComp">
                     <div class="image1 image">
-                        <div class="imgComp" style="background-image: url('images/luffy.jpg');"></div>
+                        <div class="imgComp" style="background-image: url('images/luffy.jpg'); background-size: cover;"></div>
                         <div class="info">
                             <p><i>Monkey D. Luffy</i></p>
                         </div>
