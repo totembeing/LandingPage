@@ -38,7 +38,7 @@ nav{
     width: 100%;
     display: flex;
     height: 10%;
-}
+}     
 
 .name{
     flex: 3;
@@ -46,6 +46,7 @@ nav{
     justify-content: center;
     align-items: center;
     font-size: 2rem;
+
 }
 
 .links{
@@ -55,11 +56,14 @@ nav{
     align-items: center;
     font-size: 1.5rem;
     border: transparent;
+
 }
 
 .linksDiv{
     position: relative;
     left: 15%;
+    display: flex;
+    gap: 2.5rem;
 }
 
 .iconDiv{
@@ -155,10 +159,43 @@ ion-icon{
 .randomInfo{
     flex: 1;
     font-size: 40px;
+    display: flex;
+    text-align: center;
 }
 
 .pictures{
     flex: 3;
+    position: relative;
+}
+
+.fact{
+    position: absolute;
+    background-color: transparent;
+    backdrop-filter: blur(10px);
+    border: 0.1px solid white;
+    border-radius: 30px;
+    height: 15rem;
+    width: 8rem;
+    top: 0rem;
+    left: 0rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.fact > p {
+    color: white;
+    display: flex;
+    justify-content: center;
+}
+
+.factHeading{
+    flex: 1;
+}
+
+.factBody{
+    flex: 4;
+    justify-content: center;
+    text-align: center;
 }
 
 .picturesComp{
@@ -272,4 +309,27 @@ ion-icon{
         margin-left: 85%;
     }
 
+}
+
+@media (max-width: 768px) {
+    .picturesComp{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr ;
+    }
+
+    .image{
+        width: 15rem;
+        height: 10rem;
+    }
+
+    .fact{
+        font-size: .9rem;
+        width: 6rem;
+        border-radius: 5px;
+    }
+
+    .image{
+        background-size: contain;
+    }
 }
