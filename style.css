@@ -115,6 +115,23 @@ ion-icon{
     gap: 50px;
 }
 
+.overlay{
+    display: none;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+    background-color: rgba(0,0,0,0.7);
+    position: fixed;
+    top: 0;
+    left: 0;
+    justify-content: center;
+    align-items: center;
+}
+
+.popUp{
+    flex: 1;
+    position: fixed;
+}
 
 .welcomeText{
     flex: 2;

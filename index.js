@@ -14,12 +14,21 @@ function playAudio(audioFile) {
 
         audioFile.addEventListener("ended", () => {
             isAudioPlaying = false;
+            $(".overlay").css("display", "none");
         })
     }
 }
 
 for (let i = 0; i < document.querySelectorAll(".imgComp").length; i++) {
-    document.querySelectorAll(".imgComp")[i].addEventListener("click", () => {
+    document.querySelectorAll(".imgComp")[i].addEventListener("click", (event) => {
+        var elementId = event.srcElement.id;
+        setTimeout(() => {
+            $(".popUp").attr("src", `images/${elementId}-nobg.png`)
+        }, 350);
+        setTimeout(() => {
+            $(".overlay").css("display", "flex").fadeIn(500);
+        }, 250);
         playAudio(intros[i]);
+        
     })
 }
